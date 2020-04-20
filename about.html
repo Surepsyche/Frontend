@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./Images/logo.jpeg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script type=> 
+        $(window).load(function() { 
+            $(".carousel .item").each(function() { 
+                var i = $(this).next(); 
+                i.length || (i = $(this).siblings(":first")), 
+                  i.children(":first-child").clone().appendTo($(this)); 
+                
+                for (var n = 0; n < 4; n++)(i = i.next()).length || 
+                  (i = $(this).siblings(":first")), 
+                  i.children(":first-child").clone().appendTo($(this)) 
+            }) 
+        }); 
+    </script>
+   
+    <!--Main style css-->
+    <link rel="stylesheet" href="./css/style.css">
+   
+ 
+    <title>SurePsyches</title>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="index.html"><img src="./Images/logo-removebg-preview.png" alt="" width="200px" height="100px"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>  
+   
+        
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav ml-auto mr-5" style="font-weight: bolder;font-size: large;">
+                      <li class="nav-item active ">
+                            <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                      </li>
+                      <li class="nav-item">
+                               <a class="nav-link" href="faq.html">FAQ</a>
+                      </li>
+                      <li class="nav-item">
+                                <a class="nav-link" href="team.html">Team</a>
+                      </li>
+                   </ul>
+               </div>
+            </nav>
+        </header>
+        
+                     <section>
+                        <div class="cssSection cssLeft">
+                             <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 offset-1" >
+                                        <h4> About us</h4><br>
+                                            
+                                            <p>Surepsches is an online platform that provides individual therapy sessions with seasoned
+                                            psychologist under strict confidentiality , as well as intervention services during distressing situations.
+                                            </p>
+
+                                        <p> We also conduct life section trainings and seminers that borde on personal development and self-worth
+                                            which combine to help our client live a fully productive life. </p>
+                                    </div>
+
+                                    <div class="col-sm-3"></div>
+                                </div>
+                                <div class="row">
+                     
+                                    <div class=" col-md-4">
+                                        <div class="con">
+                                                <img src="./Images/unnamed.jpg" alt="Snow" width="350px" height="350px">
+                            
+                                                <div class="centered">
+                                                Your wellbeing<br> transcends the physical.<br>
+                                                keep your mental <br> in check
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div class=" col-md-4">
+                                        <div class="con">
+                                            <img src="./Images/unnamed.jpg" alt="Snow" width="350px" height="350px">
+                            
+                                            <div class="centered">
+                                                Have a<br> more fulfiling, full <br>
+                                                and productive life by <br> staying mentally<br> healthy.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class=" col-md-4">
+                                        <div class="con">
+                                                <img src="./Images/unnamed.jpg" alt="Snow" width="350px" height="350px">
+                                
+                                            <div class="centered">
+                                                    Connect with<br> our expert today.<br>
+                                                    We got you <br> covered.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                     </section>
+    </div>
+</body>
+</html>

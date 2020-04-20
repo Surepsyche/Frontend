@@ -1,0 +1,81 @@
+<!-- main navigation mobile -->
+<div class="main_nav_mobile" id="topNavMobile">
+    <div class="main_nav_mobile_inner">
+        <div class="navbar_nav_over_wrapp">
+            <ul class="navbar-nav">
+                <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+                <li><a asp-action="Index" asp-controller="Home">Business Bundles</a></li>
+                <li>
+                    <a asp-action="Index" asp-controller="Home">Azure Service</a>
+
+                </li>
+                <li>
+                    <a asp-action="Index" asp-controller="Home">Help</a>
+                    @*<ul class="sub-menu">
+                        <li>
+                            Help Videos
+                        </li>
+                        <li>FAQ</li>
+
+                    </ul>*@
+
+                </li>
+                <li><a asp-action="Index" asp-controller="Home">FAQs</a></li>
+                <li>
+                    <div style="float: right; cursor: pointer;">
+                        <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <button class="close_mobile_menu" type="button" data-target="#topNavMobile">
+            <span class="navbar-toggler-icon"><i class="fas fa-times"></i></span>
+        </button>
+    </div>
+    <div class="cover_mobile_menu" data-target="#topNavMobile"></div>
+</div>
+<!-- END main navigation mobile -->
+<!-- main header -->
+<header class="main_header fixed_header transparen_bg_head">
+    <div class="container clearfix">
+        <div class="logo_head">
+            <a asp-action="Index" asp-controller="Home">
+                <img src="~/secondassets/images/smep1.jpg" height="40" style="height: 40px;" />
+            </a>
+        </div>
+        <div class="navbar-expand-lg nav_btn_toggle">
+            <button class="navbar-toggler open_mobile_menu" type="button" data-target="#topNavMobile">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+        </div>
+        <nav class="top_nav_links navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="topNav">
+                <ul class="navbar-nav mr-auto">
+                    <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+                    <li><a asp-action="Index" asp-controller="WEHCBundles">WEHC Bundles</a></li>
+                    <li>
+                        <a asp-action="Index" asp-controller="AzureBundles">Azure Service</a>
+                       
+                    </li>
+                    <li class="has-child">
+                        <a asp-action="Index" asp-controller="Home">Help</a>
+                        @*<ul class="sub-menu">
+                                    <li>
+
+                                        <a asp-action="Index" asp-controller="HelpVideo">Help Videos</a>
+
+                                    </li>
+                                    <li>
+                                        <a asp-action="Index" asp-controller="FAQ">FAQ</a>
+                                    </li>
+                                </ul>*@
+
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header><!--END main header -->
